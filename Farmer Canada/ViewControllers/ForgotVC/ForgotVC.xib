@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIText-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ForgotVC" customModule="Farmer_Canada" customModuleProvider="target">
+            <connections>
+                <outlet property="btnSubmit" destination="7ki-My-iS0" id="wuF-ce-R2s"/>
+                <outlet property="txtFieldPhoneNumber" destination="WXa-2E-4fD" id="WC9-3j-QBO"/>
+                <outlet property="view" destination="pZ0-ck-aGT" id="3od-l0-GZc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="pZ0-ck-aGT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AAJ-Kz-DGa" customClass="TPKeyboardAvoidingScrollView" customModule="TPKeyboardAvoidingSwift">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ufH-hK-Z81">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="337"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_logo" translatesAutoresizingMaskIntoConstraints="NO" id="VZ0-sw-0vt">
+                                    <rect key="frame" x="147" y="10" width="120" height="120"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="120" id="IVJ-yV-ync"/>
+                                        <constraint firstAttribute="width" secondItem="VZ0-sw-0vt" secondAttribute="height" multiplier="1:1" id="Jhc-Pd-2V9"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We need your Phone Number to reach you" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWt-wq-scs">
+                                    <rect key="frame" x="30" y="150" width="354" height="20"/>
+                                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI  Text" pointSize="17"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ki-My-iS0">
+                                    <rect key="frame" x="15" y="267" width="384" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="zRj-aJ-Vh4"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI  Text" pointSize="17"/>
+                                    <state key="normal" title="Submit"/>
+                                </button>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WXa-2E-4fD" customClass="JVFloatLabeledTextField">
+                                    <rect key="frame" x="15" y="205" width="384" height="42"/>
+                                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI  Text" pointSize="15"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelYPadding">
+                                            <real key="value" value="-5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="WXa-2E-4fD" firstAttribute="top" secondItem="oWt-wq-scs" secondAttribute="bottom" constant="35" id="0i2-or-Nst"/>
+                                <constraint firstItem="oWt-wq-scs" firstAttribute="leading" secondItem="ufH-hK-Z81" secondAttribute="leading" constant="30" id="7n2-pN-yt3"/>
+                                <constraint firstItem="VZ0-sw-0vt" firstAttribute="centerX" secondItem="ufH-hK-Z81" secondAttribute="centerX" id="MKN-Nk-p3u"/>
+                                <constraint firstAttribute="bottom" secondItem="7ki-My-iS0" secondAttribute="bottom" constant="30" id="Nu7-RH-DmZ"/>
+                                <constraint firstItem="oWt-wq-scs" firstAttribute="top" secondItem="VZ0-sw-0vt" secondAttribute="bottom" constant="20" id="R0C-zG-lSW"/>
+                                <constraint firstItem="7ki-My-iS0" firstAttribute="top" secondItem="WXa-2E-4fD" secondAttribute="bottom" constant="20" id="ZtX-kt-5od"/>
+                                <constraint firstItem="7ki-My-iS0" firstAttribute="leading" secondItem="WXa-2E-4fD" secondAttribute="leading" id="enq-9p-cZ6"/>
+                                <constraint firstAttribute="trailing" secondItem="WXa-2E-4fD" secondAttribute="trailing" constant="15" id="iUe-oB-N7z"/>
+                                <constraint firstItem="VZ0-sw-0vt" firstAttribute="top" secondItem="ufH-hK-Z81" secondAttribute="top" constant="10" id="mfh-5x-xKg"/>
+                                <constraint firstAttribute="trailing" secondItem="oWt-wq-scs" secondAttribute="trailing" constant="30" id="p90-z8-N7M"/>
+                                <constraint firstItem="7ki-My-iS0" firstAttribute="trailing" secondItem="WXa-2E-4fD" secondAttribute="trailing" id="qC4-o6-o2G"/>
+                                <constraint firstItem="WXa-2E-4fD" firstAttribute="leading" secondItem="ufH-hK-Z81" secondAttribute="leading" constant="15" id="uHf-Mi-Von"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ufH-hK-Z81" secondAttribute="trailing" id="Iky-Hf-gFX"/>
+                        <constraint firstItem="ufH-hK-Z81" firstAttribute="leading" secondItem="AAJ-Kz-DGa" secondAttribute="leading" id="YZV-E7-OGJ"/>
+                        <constraint firstItem="ufH-hK-Z81" firstAttribute="top" secondItem="AAJ-Kz-DGa" secondAttribute="top" id="gkU-7K-oml"/>
+                        <constraint firstAttribute="bottom" secondItem="ufH-hK-Z81" secondAttribute="bottom" id="ldb-r8-R0V"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="R9p-10-gg7"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ufH-hK-Z81" firstAttribute="width" secondItem="pZ0-ck-aGT" secondAttribute="width" id="GzM-Ct-htB"/>
+                <constraint firstItem="R9p-10-gg7" firstAttribute="bottom" secondItem="AAJ-Kz-DGa" secondAttribute="bottom" id="K1N-ob-3ey"/>
+                <constraint firstItem="AAJ-Kz-DGa" firstAttribute="top" secondItem="R9p-10-gg7" secondAttribute="top" id="agA-YY-VCF"/>
+                <constraint firstItem="AAJ-Kz-DGa" firstAttribute="leading" secondItem="R9p-10-gg7" secondAttribute="leading" id="mRg-b5-0dX"/>
+                <constraint firstItem="R9p-10-gg7" firstAttribute="trailing" secondItem="AAJ-Kz-DGa" secondAttribute="trailing" id="wk4-iy-osv"/>
+            </constraints>
+            <point key="canvasLocation" x="140.57971014492756" y="71.651785714285708"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="WXa-2E-4fD">
+            <size key="intrinsicContentSize" width="129.5" height="42"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="splash_logo" width="153" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

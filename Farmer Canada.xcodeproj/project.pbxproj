@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E802091C2BEC6F494B3476A /* Pods_Farmer_Canada.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5FD0219647ACC64197A8E30 /* Pods_Farmer_Canada.framework */; };
+		E41EAB7925A21DC800787ED2 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41EAB7725A21DC800787ED2 /* MapVC.swift */; };
+		E41EAB7A25A21DC800787ED2 /* MapVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E41EAB7825A21DC800787ED2 /* MapVC.xib */; };
+		E441AC5C25A387D100DFB711 /* OTPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E441AC5A25A387D100DFB711 /* OTPVC.swift */; };
+		E441AC5D25A387D100DFB711 /* OTPVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E441AC5B25A387D100DFB711 /* OTPVC.xib */; };
+		E441AC6225A398F600DFB711 /* ForgotVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E441AC6025A398F600DFB711 /* ForgotVC.swift */; };
+		E441AC6325A398F600DFB711 /* ForgotVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E441AC6125A398F600DFB711 /* ForgotVC.xib */; };
+		E446836425A30D510099451A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E446836225A30D510099451A /* LoginVC.swift */; };
+		E446836525A30D510099451A /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E446836325A30D510099451A /* LoginVC.xib */; };
+		E446836725A3113F0099451A /* SF-Pro-Display-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = E456DBB9259F99CF00912808 /* SF-Pro-Display-Black.otf */; };
+		E446836925A311460099451A /* SFUIText-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E456DBBA259F99CF00912808 /* SFUIText-Regular.otf */; };
+		E446838225A33D340099451A /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E446838025A33D340099451A /* SignupVC.swift */; };
+		E446838325A33D340099451A /* SignupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E446838125A33D340099451A /* SignupVC.xib */; };
+		E446838725A345DB0099451A /* ConstantStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E446838625A345DB0099451A /* ConstantStrings.swift */; };
+		E456DB85259F894900912808 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E456DB84259F894900912808 /* AppDelegate.swift */; };
+		E456DB87259F894900912808 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E456DB86259F894900912808 /* SceneDelegate.swift */; };
+		E456DB89259F894900912808 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E456DB88259F894900912808 /* ViewController.swift */; };
+		E456DB8C259F894900912808 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E456DB8A259F894900912808 /* Main.storyboard */; };
+		E456DB8E259F894A00912808 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E456DB8D259F894A00912808 /* Assets.xcassets */; };
+		E456DB91259F894A00912808 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E456DB8F259F894A00912808 /* LaunchScreen.storyboard */; };
+		E456DBA7259F961500912808 /* WalkThroughVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E456DBA5259F961500912808 /* WalkThroughVC.swift */; };
+		E456DBA8259F961500912808 /* WalkThroughVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E456DBA6259F961500912808 /* WalkThroughVC.xib */; };
+		E456DBAD259F980E00912808 /* WalkThroughCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E456DBAB259F980E00912808 /* WalkThroughCVC.swift */; };
+		E456DBAE259F980E00912808 /* WalkThroughCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E456DBAC259F980E00912808 /* WalkThroughCVC.xib */; };
+		E456DBB4259F98CF00912808 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E456DBB2259F98CF00912808 /* BaseVC.swift */; };
+		E456DBB5259F98CF00912808 /* BaseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E456DBB3259F98CF00912808 /* BaseVC.xib */; };
+		E456DBBF259FB6C600912808 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E456DBBE259FB6C600912808 /* Colors.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C8E010F5A4CDF89205D4F275 /* Pods-Farmer Canada.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Farmer Canada.debug.xcconfig"; path = "Target Support Files/Pods-Farmer Canada/Pods-Farmer Canada.debug.xcconfig"; sourceTree = "<group>"; };
+		D5FD0219647ACC64197A8E30 /* Pods_Farmer_Canada.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Farmer_Canada.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D96801D45D82800704C68932 /* Pods-Farmer Canada.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Farmer Canada.release.xcconfig"; path = "Target Support Files/Pods-Farmer Canada/Pods-Farmer Canada.release.xcconfig"; sourceTree = "<group>"; };
+		E41EAB7725A21DC800787ED2 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		E41EAB7825A21DC800787ED2 /* MapVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapVC.xib; sourceTree = "<group>"; };
+		E441AC5A25A387D100DFB711 /* OTPVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVC.swift; sourceTree = "<group>"; };
+		E441AC5B25A387D100DFB711 /* OTPVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OTPVC.xib; sourceTree = "<group>"; };
+		E441AC6025A398F600DFB711 /* ForgotVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotVC.swift; sourceTree = "<group>"; };
+		E441AC6125A398F600DFB711 /* ForgotVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotVC.xib; sourceTree = "<group>"; };
+		E446836225A30D510099451A /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		E446836325A30D510099451A /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		E446838025A33D340099451A /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
+		E446838125A33D340099451A /* SignupVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupVC.xib; sourceTree = "<group>"; };
+		E446838625A345DB0099451A /* ConstantStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantStrings.swift; sourceTree = "<group>"; };
+		E456DB81259F894900912808 /* Farmer Canada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Farmer Canada.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E456DB84259F894900912808 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E456DB86259F894900912808 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E456DB88259F894900912808 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E456DB8B259F894900912808 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E456DB8D259F894A00912808 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E456DB90259F894A00912808 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E456DB92259F894A00912808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E456DBA5259F961500912808 /* WalkThroughVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughVC.swift; sourceTree = "<group>"; };
+		E456DBA6259F961500912808 /* WalkThroughVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalkThroughVC.xib; sourceTree = "<group>"; };
+		E456DBAB259F980E00912808 /* WalkThroughCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughCVC.swift; sourceTree = "<group>"; };
+		E456DBAC259F980E00912808 /* WalkThroughCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalkThroughCVC.xib; sourceTree = "<group>"; };
+		E456DBB2259F98CF00912808 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		E456DBB3259F98CF00912808 /* BaseVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseVC.xib; sourceTree = "<group>"; };
+		E456DBB9259F99CF00912808 /* SF-Pro-Display-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Black.otf"; sourceTree = "<group>"; };
+		E456DBBA259F99CF00912808 /* SFUIText-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Regular.otf"; sourceTree = "<group>"; };
+		E456DBBE259FB6C600912808 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E456DB7E259F894900912808 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E802091C2BEC6F494B3476A /* Pods_Farmer_Canada.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		088C849FB6C5378AAF140720 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8E010F5A4CDF89205D4F275 /* Pods-Farmer Canada.debug.xcconfig */,
+				D96801D45D82800704C68932 /* Pods-Farmer Canada.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		091E82CF142561BE6EDA9725 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5FD0219647ACC64197A8E30 /* Pods_Farmer_Canada.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E41EAB7625A21DA600787ED2 /* MapVC */ = {
+			isa = PBXGroup;
+			children = (
+				E41EAB7725A21DC800787ED2 /* MapVC.swift */,
+				E41EAB7825A21DC800787ED2 /* MapVC.xib */,
+			);
+			path = MapVC;
+			sourceTree = "<group>";
+		};
+		E42982BA25A18501008F8955 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		E441AC5F25A398E300DFB711 /* ForgotVC */ = {
+			isa = PBXGroup;
+			children = (
+				E441AC6025A398F600DFB711 /* ForgotVC.swift */,
+				E441AC6125A398F600DFB711 /* ForgotVC.xib */,
+			);
+			path = ForgotVC;
+			sourceTree = "<group>";
+		};
+		E446838525A345C60099451A /* ConstantStrings */ = {
+			isa = PBXGroup;
+			children = (
+				E446838625A345DB0099451A /* ConstantStrings.swift */,
+			);
+			path = ConstantStrings;
+			sourceTree = "<group>";
+		};
+		E456DB78259F894900912808 = {
+			isa = PBXGroup;
+			children = (
+				E456DB83259F894900912808 /* Farmer Canada */,
+				E456DB82259F894900912808 /* Products */,
+				088C849FB6C5378AAF140720 /* Pods */,
+				091E82CF142561BE6EDA9725 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E456DB82259F894900912808 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E456DB81259F894900912808 /* Farmer Canada.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E456DB83259F894900912808 /* Farmer Canada */ = {
+			isa = PBXGroup;
+			children = (
+				E456DB84259F894900912808 /* AppDelegate.swift */,
+				E456DB86259F894900912808 /* SceneDelegate.swift */,
+				E456DB88259F894900912808 /* ViewController.swift */,
+				E456DBBC259FB6B900912808 /* UtilityClasses */,
+				E456DB9B259F898900912808 /* ViewControllers */,
+				E456DBB8259F99BD00912808 /* Font */,
+				E42982BA25A18501008F8955 /* SplashScreen */,
+				E456DB8A259F894900912808 /* Main.storyboard */,
+				E456DB8D259F894A00912808 /* Assets.xcassets */,
+				E456DB8F259F894A00912808 /* LaunchScreen.storyboard */,
+				E456DB92259F894A00912808 /* Info.plist */,
+			);
+			path = "Farmer Canada";
+			sourceTree = "<group>";
+		};
+		E456DB9B259F898900912808 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E456DBB1259F98BD00912808 /* BaseVC */,
+				E456DB9E259F89D700912808 /* CartVC */,
+				E456DBA2259F89D800912808 /* HomeVC */,
+				E441AC5F25A398E300DFB711 /* ForgotVC */,
+				E456DB9C259F89D700912808 /* LoginVC */,
+				E41EAB7625A21DA600787ED2 /* MapVC */,
+				E456DBA3259F89D800912808 /* OTPVC */,
+				E456DB9D259F89D700912808 /* ProductDetailVC */,
+				E456DB9F259F89D700912808 /* SignupVC */,
+				E456DBA1259F89D700912808 /* SplashVC */,
+				E456DBA0259F89D700912808 /* WalkThroughVC */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E456DB9C259F89D700912808 /* LoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				E446836225A30D510099451A /* LoginVC.swift */,
+				E446836325A30D510099451A /* LoginVC.xib */,
+			);
+			path = LoginVC;
+			sourceTree = "<group>";
+		};
+		E456DB9D259F89D700912808 /* ProductDetailVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ProductDetailVC;
+			sourceTree = "<group>";
+		};
+		E456DB9E259F89D700912808 /* CartVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CartVC;
+			sourceTree = "<group>";
+		};
+		E456DB9F259F89D700912808 /* SignupVC */ = {
+			isa = PBXGroup;
+			children = (
+				E446838025A33D340099451A /* SignupVC.swift */,
+				E446838125A33D340099451A /* SignupVC.xib */,
+			);
+			path = SignupVC;
+			sourceTree = "<group>";
+		};
+		E456DBA0259F89D700912808 /* WalkThroughVC */ = {
+			isa = PBXGroup;
+			children = (
+				E456DBAA259F97E500912808 /* Cell */,
+				E456DBA5259F961500912808 /* WalkThroughVC.swift */,
+				E456DBA6259F961500912808 /* WalkThroughVC.xib */,
+			);
+			path = WalkThroughVC;
+			sourceTree = "<group>";
+		};
+		E456DBA1259F89D700912808 /* SplashVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SplashVC;
+			sourceTree = "<group>";
+		};
+		E456DBA2259F89D800912808 /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		E456DBA3259F89D800912808 /* OTPVC */ = {
+			isa = PBXGroup;
+			children = (
+				E441AC5A25A387D100DFB711 /* OTPVC.swift */,
+				E441AC5B25A387D100DFB711 /* OTPVC.xib */,
+			);
+			path = OTPVC;
+			sourceTree = "<group>";
+		};
+		E456DBAA259F97E500912808 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E456DBAB259F980E00912808 /* WalkThroughCVC.swift */,
+				E456DBAC259F980E00912808 /* WalkThroughCVC.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E456DBB1259F98BD00912808 /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				E456DBB2259F98CF00912808 /* BaseVC.swift */,
+				E456DBB3259F98CF00912808 /* BaseVC.xib */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		E456DBB8259F99BD00912808 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				E456DBB9259F99CF00912808 /* SF-Pro-Display-Black.otf */,
+				E456DBBA259F99CF00912808 /* SFUIText-Regular.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		E456DBBC259FB6B900912808 /* UtilityClasses */ = {
+			isa = PBXGroup;
+			children = (
+				E446838525A345C60099451A /* ConstantStrings */,
+				E456DBBD259FB6C600912808 /* Color */,
+			);
+			path = UtilityClasses;
+			sourceTree = "<group>";
+		};
+		E456DBBD259FB6C600912808 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				E456DBBE259FB6C600912808 /* Colors.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E456DB80259F894900912808 /* Farmer Canada */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E456DB95259F894A00912808 /* Build configuration list for PBXNativeTarget "Farmer Canada" */;
+			buildPhases = (
+				834149A91B6562E0B8F2D121 /* [CP] Check Pods Manifest.lock */,
+				E456DB7D259F894900912808 /* Sources */,
+				E456DB7E259F894900912808 /* Frameworks */,
+				E456DB7F259F894900912808 /* Resources */,
+				0D610144C5D9CDF200E010C2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Farmer Canada";
+			productName = "Farmer Canada";
+			productReference = E456DB81259F894900912808 /* Farmer Canada.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E456DB79259F894900912808 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					E456DB80259F894900912808 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = E456DB7C259F894900912808 /* Build configuration list for PBXProject "Farmer Canada" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E456DB78259F894900912808;
+			productRefGroup = E456DB82259F894900912808 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E456DB80259F894900912808 /* Farmer Canada */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E456DB7F259F894900912808 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E446836925A311460099451A /* SFUIText-Regular.otf in Resources */,
+				E446836725A3113F0099451A /* SF-Pro-Display-Black.otf in Resources */,
+				E456DBAE259F980E00912808 /* WalkThroughCVC.xib in Resources */,
+				E456DB91259F894A00912808 /* LaunchScreen.storyboard in Resources */,
+				E456DB8E259F894A00912808 /* Assets.xcassets in Resources */,
+				E456DBB5259F98CF00912808 /* BaseVC.xib in Resources */,
+				E441AC6325A398F600DFB711 /* ForgotVC.xib in Resources */,
+				E441AC5D25A387D100DFB711 /* OTPVC.xib in Resources */,
+				E446838325A33D340099451A /* SignupVC.xib in Resources */,
+				E456DB8C259F894900912808 /* Main.storyboard in Resources */,
+				E456DBA8259F961500912808 /* WalkThroughVC.xib in Resources */,
+				E446836525A30D510099451A /* LoginVC.xib in Resources */,
+				E41EAB7A25A21DC800787ED2 /* MapVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D610144C5D9CDF200E010C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Farmer Canada/Pods-Farmer Canada-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Farmer Canada/Pods-Farmer Canada-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Farmer Canada/Pods-Farmer Canada-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		834149A91B6562E0B8F2D121 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Farmer Canada-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E456DB7D259F894900912808 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E456DB89259F894900912808 /* ViewController.swift in Sources */,
+				E456DBB4259F98CF00912808 /* BaseVC.swift in Sources */,
+				E456DB85259F894900912808 /* AppDelegate.swift in Sources */,
+				E456DBBF259FB6C600912808 /* Colors.swift in Sources */,
+				E456DB87259F894900912808 /* SceneDelegate.swift in Sources */,
+				E446836425A30D510099451A /* LoginVC.swift in Sources */,
+				E446838225A33D340099451A /* SignupVC.swift in Sources */,
+				E41EAB7925A21DC800787ED2 /* MapVC.swift in Sources */,
+				E446838725A345DB0099451A /* ConstantStrings.swift in Sources */,
+				E456DBA7259F961500912808 /* WalkThroughVC.swift in Sources */,
+				E441AC5C25A387D100DFB711 /* OTPVC.swift in Sources */,
+				E456DBAD259F980E00912808 /* WalkThroughCVC.swift in Sources */,
+				E441AC6225A398F600DFB711 /* ForgotVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E456DB8A259F894900912808 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E456DB8B259F894900912808 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E456DB8F259F894A00912808 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E456DB90259F894A00912808 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E456DB93259F894A00912808 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E456DB94259F894A00912808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E456DB96259F894A00912808 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8E010F5A4CDF89205D4F275 /* Pods-Farmer Canada.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8997D3TYMM;
+				INFOPLIST_FILE = "Farmer Canada/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.expert.Farmer-Canada";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E456DB97259F894A00912808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D96801D45D82800704C68932 /* Pods-Farmer Canada.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8997D3TYMM;
+				INFOPLIST_FILE = "Farmer Canada/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.expert.Farmer-Canada";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E456DB7C259F894900912808 /* Build configuration list for PBXProject "Farmer Canada" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E456DB93259F894A00912808 /* Debug */,
+				E456DB94259F894A00912808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E456DB95259F894A00912808 /* Build configuration list for PBXNativeTarget "Farmer Canada" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E456DB96259F894A00912808 /* Debug */,
+				E456DB97259F894A00912808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E456DB79259F894900912808 /* Project object */;
+}

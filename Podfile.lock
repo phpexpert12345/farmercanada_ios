@@ -1,0 +1,36 @@
+PODS:
+  - JVFloatLabeledTextField (1.2.2)
+  - MBProgressHUD (1.2.0)
+  - RPFloatingPlaceholders (0.3.3)
+  - SkyFloatingLabelTextField (4.0.0)
+  - Toast-Swift (5.0.1)
+  - TPKeyboardAvoidingSwift (3.2)
+
+DEPENDENCIES:
+  - JVFloatLabeledTextField
+  - MBProgressHUD
+  - RPFloatingPlaceholders
+  - SkyFloatingLabelTextField
+  - Toast-Swift
+  - TPKeyboardAvoidingSwift
+
+SPEC REPOS:
+  trunk:
+    - JVFloatLabeledTextField
+    - MBProgressHUD
+    - RPFloatingPlaceholders
+    - SkyFloatingLabelTextField
+    - Toast-Swift
+    - TPKeyboardAvoidingSwift
+
+SPEC CHECKSUMS:
+  JVFloatLabeledTextField: df48598472ee015701d509f43e59492a0d4ca208
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  RPFloatingPlaceholders: 983ea3e4b8d7aee04ce2d3d418a8fa24c3f59061
+  SkyFloatingLabelTextField: 79ddc40e4ad59707fedbb48d605417aee48bb78a
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+  TPKeyboardAvoidingSwift: ce1a75e0bc3af6b485f8bfa1d0a8320cfc565851
+
+PODFILE CHECKSUM: 58c4f94247e7056ebb137f76381496e40ca7054e
+
+COCOAPODS: 1.10.0
