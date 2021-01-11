@@ -9,16 +9,20 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="SF-Pro-Display-Black.otf">
-            <string>SFProDisplay-Black</string>
-        </array>
         <array key="SFUIText-Regular.otf">
             <string>SFUIText-Regular</string>
+        </array>
+        <array key="sf-ui-display-bold.otf">
+            <string>SFUIDisplay-Bold</string>
+        </array>
+        <array key="sf-ui-display-semibold.otf">
+            <string>SFUIDisplay-Semibold</string>
         </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginVC" customModule="Farmer_Canada" customModuleProvider="target">
             <connections>
+                <outlet property="btnBack" destination="4B2-J8-Ecm" id="XEL-48-lDE"/>
                 <outlet property="btnForgotPassword" destination="nmS-38-uP5" id="OvY-Pv-OD7"/>
                 <outlet property="btnLogin" destination="zWb-JD-Epe" id="ke5-Y3-s56"/>
                 <outlet property="btnRegister" destination="4Nb-rh-kWY" id="Lot-1g-TQc"/>
@@ -46,13 +50,13 @@
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K9p-h9-0X4">
-                                    <rect key="frame" x="15" y="190" width="384" height="35"/>
-                                    <fontDescription key="fontDescription" name="SFProDisplay-Black" family="SF Pro Display" pointSize="30"/>
+                                    <rect key="frame" x="15" y="190" width="384" height="36"/>
+                                    <fontDescription key="fontDescription" name="SFUIDisplay-Bold" family="SF UI Display" pointSize="30"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aoc-0e-XBJ" customClass="JVFloatLabeledTextField">
-                                    <rect key="frame" x="15" y="260" width="384" height="50"/>
+                                    <rect key="frame" x="15" y="261" width="384" height="50"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="50" id="k2t-FC-YbA"/>
                                     </constraints>
@@ -65,7 +69,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </textField>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4xd-jg-lPK" customClass="JVFloatLabeledTextField">
-                                    <rect key="frame" x="15" y="335" width="384" height="50"/>
+                                    <rect key="frame" x="15" y="336" width="384" height="50"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     <userDefinedRuntimeAttributes>
@@ -75,7 +79,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </textField>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmS-38-uP5">
-                                    <rect key="frame" x="276" y="390" width="123" height="30"/>
+                                    <rect key="frame" x="272" y="391" width="127" height="30"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="30" id="fNj-Vk-fKk"/>
                                     </constraints>
@@ -86,18 +90,18 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWb-JD-Epe">
-                                    <rect key="frame" x="15" y="445" width="384" height="40"/>
+                                    <rect key="frame" x="15" y="446" width="384" height="45"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="40" id="e7v-ds-YKy"/>
+                                        <constraint firstAttribute="height" constant="45" id="e7v-ds-YKy"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI  Text" pointSize="17"/>
+                                    <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="17"/>
                                     <state key="normal" title="Login"/>
                                     <connections>
                                         <action selector="btnLoginTapped:" destination="-1" eventType="touchUpInside" id="6KT-Rk-YrD"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idp-WJ-MGq">
-                                    <rect key="frame" x="132" y="505" width="70" height="70"/>
+                                    <rect key="frame" x="132" y="511" width="70" height="70"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="idp-WJ-MGq" secondAttribute="height" multiplier="1:1" id="vL1-5X-15k"/>
                                         <constraint firstAttribute="height" constant="70" id="zWn-Wl-e3l"/>
@@ -108,7 +112,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAo-XU-hcA">
-                                    <rect key="frame" x="212" y="505" width="70" height="70"/>
+                                    <rect key="frame" x="212" y="511" width="70" height="70"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="70" id="N1V-U4-zOP"/>
                                     </constraints>
@@ -118,7 +122,7 @@
                                     </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Here?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rw-Tx-7XO">
-                                    <rect key="frame" x="128" y="605" width="74.5" height="18"/>
+                                    <rect key="frame" x="126.5" y="611" width="77.5" height="18"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="18" id="vKl-AY-5hG"/>
                                     </constraints>
@@ -127,7 +131,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Nb-rh-kWY">
-                                    <rect key="frame" x="207.5" y="599" width="56" height="30"/>
+                                    <rect key="frame" x="209" y="605" width="59" height="30"/>
                                     <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI  Text" pointSize="15"/>
                                     <state key="normal" title="Register"/>
                                     <connections>
@@ -140,6 +144,17 @@
                                         <constraint firstAttribute="height" constant="100" id="lah-Ji-FX4"/>
                                     </constraints>
                                 </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4B2-J8-Ecm">
+                                    <rect key="frame" x="15" y="15" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="29x-a0-CiT"/>
+                                        <constraint firstAttribute="width" secondItem="4B2-J8-Ecm" secondAttribute="height" multiplier="1:1" id="lfG-9u-4ZQ"/>
+                                    </constraints>
+                                    <state key="normal" image="back"/>
+                                    <connections>
+                                        <action selector="btnBackTapped:" destination="-1" eventType="touchUpInside" id="x12-0J-MjH"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
@@ -168,6 +183,7 @@
                                 <constraint firstItem="zWb-JD-Epe" firstAttribute="top" secondItem="nmS-38-uP5" secondAttribute="bottom" constant="25" id="cA2-iw-ceb"/>
                                 <constraint firstItem="Aoc-0e-XBJ" firstAttribute="leading" secondItem="K9p-h9-0X4" secondAttribute="leading" id="eao-xs-8hZ"/>
                                 <constraint firstItem="oAo-XU-hcA" firstAttribute="centerX" secondItem="dA2-tZ-F4c" secondAttribute="centerX" constant="40" id="ez9-ak-6D6"/>
+                                <constraint firstItem="4B2-J8-Ecm" firstAttribute="leading" secondItem="dA2-tZ-F4c" secondAttribute="leading" constant="15" id="hV5-Gu-GB3"/>
                                 <constraint firstItem="nmS-38-uP5" firstAttribute="top" secondItem="4xd-jg-lPK" secondAttribute="bottom" constant="5" id="jDU-QF-ne5"/>
                                 <constraint firstAttribute="trailing" secondItem="K9p-h9-0X4" secondAttribute="trailing" constant="15" id="jN4-Ge-3bZ"/>
                                 <constraint firstItem="4nM-0v-FPU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6rw-Tx-7XO" secondAttribute="bottom" constant="20" id="ka4-Ss-zpe"/>
@@ -175,6 +191,7 @@
                                 <constraint firstItem="Aoc-0e-XBJ" firstAttribute="trailing" secondItem="K9p-h9-0X4" secondAttribute="trailing" id="lAn-aE-Tcr"/>
                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4Nb-rh-kWY" secondAttribute="trailing" constant="15" id="nDL-qQ-Hfz"/>
                                 <constraint firstItem="idp-WJ-MGq" firstAttribute="centerX" secondItem="dA2-tZ-F4c" secondAttribute="centerX" constant="-40" id="uCY-9s-oDc"/>
+                                <constraint firstItem="4B2-J8-Ecm" firstAttribute="top" secondItem="dA2-tZ-F4c" secondAttribute="top" constant="15" id="vv6-MS-OHu"/>
                                 <constraint firstItem="4xd-jg-lPK" firstAttribute="height" secondItem="Aoc-0e-XBJ" secondAttribute="height" id="w35-K7-2EE"/>
                             </constraints>
                         </view>
@@ -209,10 +226,11 @@
             <size key="intrinsicContentSize" width="90.5" height="41"/>
         </designable>
         <designable name="Aoc-0e-XBJ">
-            <size key="intrinsicContentSize" width="65" height="42"/>
+            <size key="intrinsicContentSize" width="66" height="42.5"/>
         </designable>
     </designables>
     <resources>
+        <image name="back" width="24" height="24"/>
         <image name="bottom_view" width="300" height="62"/>
         <image name="facebook_logo" width="90" height="90"/>
         <image name="google_logo" width="90" height="90"/>

@@ -12,6 +12,9 @@
         <array key="SFUIText-Regular.otf">
             <string>SFUIText-Regular</string>
         </array>
+        <array key="sf-ui-display-semibold.otf">
+            <string>SFUIDisplay-Semibold</string>
+        </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ForgotVC" customModule="Farmer_Canada" customModuleProvider="target">
@@ -50,7 +53,7 @@
                                     <constraints>
                                         <constraint firstAttribute="height" constant="40" id="zRj-aJ-Vh4"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI  Text" pointSize="17"/>
+                                    <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="17"/>
                                     <state key="normal" title="Submit"/>
                                 </button>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WXa-2E-4fD" customClass="JVFloatLabeledTextField">

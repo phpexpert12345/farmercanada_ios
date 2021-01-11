@@ -8,6 +8,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="sf-ui-display-semibold.otf">
+            <string>SFUIDisplay-Semibold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WalkThroughVC" customModule="Farmer_Canada" customModuleProvider="target">
             <connections>
@@ -50,12 +55,13 @@
                     <rect key="frame" x="0.0" y="729" width="414" height="28"/>
                 </pageControl>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ade-br-Aua">
-                    <rect key="frame" x="147" y="494" width="120" height="40"/>
+                    <rect key="frame" x="132" y="712" width="150" height="45"/>
                     <color key="backgroundColor" red="0.90980392160000001" green="0.38431372549999998" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="40" id="Hno-Ca-ENc"/>
-                        <constraint firstAttribute="width" constant="120" id="irR-gv-dTV"/>
+                        <constraint firstAttribute="height" constant="45" id="Hno-Ca-ENc"/>
+                        <constraint firstAttribute="width" constant="150" id="irR-gv-dTV"/>
                     </constraints>
+                    <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="17"/>
                     <state key="normal" title="Get Start">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
@@ -74,10 +80,10 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dSn-aU-9Qj" secondAttribute="bottom" constant="15" id="Ij1-Rd-00v"/>
                 <constraint firstItem="JYI-fT-Efz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Tly-0J-kFG"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JYI-fT-Efz" secondAttribute="trailing" id="U5A-2K-DqS"/>
-                <constraint firstItem="ade-br-Aua" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="450" id="UwO-j7-XBN"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dSn-aU-9Qj" secondAttribute="trailing" constant="15" id="cyZ-9j-azE"/>
                 <constraint firstItem="ade-br-Aua" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eZd-Ao-zDG"/>
                 <constraint firstItem="DYP-Kg-MBb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lIV-Xp-by2"/>
+                <constraint firstItem="DYP-Kg-MBb" firstAttribute="bottom" secondItem="ade-br-Aua" secondAttribute="bottom" id="ocE-CI-MZm"/>
             </constraints>
             <point key="canvasLocation" x="142" y="92"/>
         </view>

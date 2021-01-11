@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SliderCell" id="on3-Eb-yxR" customClass="SliderCVC" customModule="Farmer_Canada" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="279" height="108"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="279" height="108"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fbt-h1-SvS">
+                        <rect key="frame" x="15" y="0.0" width="249" height="108"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="2f5-Cn-tvm"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Fbt-h1-SvS" secondAttribute="bottom" id="QMm-lB-DvV"/>
+                <constraint firstItem="Fbt-h1-SvS" firstAttribute="leading" secondItem="on3-Eb-yxR" secondAttribute="leading" constant="15" id="QZD-GB-qni"/>
+                <constraint firstAttribute="trailing" secondItem="Fbt-h1-SvS" secondAttribute="trailing" constant="15" id="SwE-jA-Qd1"/>
+                <constraint firstItem="Fbt-h1-SvS" firstAttribute="top" secondItem="on3-Eb-yxR" secondAttribute="top" id="s0C-ka-Hh9"/>
+            </constraints>
+            <size key="customSize" width="279" height="108"/>
+            <connections>
+                <outlet property="imageViewSlider" destination="Fbt-h1-SvS" id="FAg-x3-xzX"/>
+            </connections>
+            <point key="canvasLocation" x="39" y="79"/>
+        </collectionViewCell>
+    </objects>
+</document>

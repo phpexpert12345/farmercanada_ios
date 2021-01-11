@@ -25,6 +25,11 @@ class OTPVC: BaseVC {
         self.setupViewDidLoadMethod()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.createGradientColorWith(Colors.colorWithHexString(Colors.LIGHT_COLOR), Colors.colorWithHexString(Colors.DARK_COLOR), self.btnSubmitOTP)
+    }
+    
     func setupViewDidLoadMethod() -> Void {
         self.navigationItem.title = "Enter OTP"
         self.setupBackBarButton()

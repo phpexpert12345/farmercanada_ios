@@ -70,6 +70,8 @@
 	<array>
 		<string>SF-Pro-Display-Black.otf</string>
 		<string>SFUIText-Regular.otf</string>
+		<string>sf-ui-display-semibold.otf</string>
+		<string>sf-ui-display-bold.otf</string>
 	</array>
 </dict>
 </plist>

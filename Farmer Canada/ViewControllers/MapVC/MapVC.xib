@@ -12,6 +12,9 @@
         <array key="SFUIText-Regular.otf">
             <string>SFUIText-Regular</string>
         </array>
+        <array key="sf-ui-display-semibold.otf">
+            <string>SFUIDisplay-Semibold</string>
+        </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapVC" customModule="Farmer_Canada" customModuleProvider="target">
@@ -28,6 +31,7 @@
                 <outlet property="view" destination="srE-kA-2oI" id="iaI-Sp-2n8"/>
                 <outlet property="viewBottom" destination="Ozv-Bb-hWN" id="e9d-Fa-ckA"/>
                 <outlet property="viewConfirmAddress" destination="B17-qO-N15" id="17i-01-A4l"/>
+                <outlet property="viewEdit" destination="swh-F0-zNC" id="Tym-TC-fpY"/>
                 <outlet property="viewLocationRequired" destination="db2-2x-ixX" id="pMg-Oi-kvh"/>
                 <outlet property="viewSearch" destination="dQj-r9-JZn" id="bsi-HC-rFd"/>
             </connections>
@@ -46,7 +50,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="dYv-O8-QST"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI  Text" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ozv-Bb-hWN">
@@ -61,10 +65,13 @@
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hdh-nc-PoL">
                             <rect key="frame" x="0.0" y="0.0" width="70" height="43"/>
-                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="15"/>
                             <state key="normal" title="Search">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
+                            <connections>
+                                <action selector="btnSearchTapped:" destination="-1" eventType="touchUpInside" id="27c-m9-okJ"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="0.89019607840000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -78,14 +85,14 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B17-qO-N15">
-                    <rect key="frame" x="0.0" y="721" width="414" height="141"/>
+                    <rect key="frame" x="0.0" y="741.5" width="414" height="120.5"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="goS-Hh-amJ">
-                            <rect key="frame" x="15" y="81" width="384" height="45"/>
+                            <rect key="frame" x="15" y="60.5" width="384" height="45"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="45" id="g5i-ih-aOS"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI  Text" pointSize="17"/>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="17"/>
                             <state key="normal" title="Confirm Location">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
@@ -93,35 +100,52 @@
                                 <action selector="btnConfirmLocationTapped:" destination="-1" eventType="touchUpInside" id="y2t-cn-kuK"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gei-Em-bQR">
-                            <rect key="frame" x="359" y="31" width="40" height="40"/>
-                            <color key="backgroundColor" red="0.90980392156862744" green="0.38431372549019605" blue="0.41568627450980389" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="40" id="epr-qE-EVz"/>
-                                <constraint firstAttribute="width" secondItem="Gei-Em-bQR" secondAttribute="height" multiplier="1:1" id="hnw-vF-md2"/>
-                            </constraints>
-                            <state key="normal" image="edit"/>
-                            <connections>
-                                <action selector="btnEditTapped:" destination="-1" eventType="touchUpInside" id="DI4-5t-pmH"/>
-                            </connections>
-                        </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="India Gate Near sansad bhawan New Delhi - 201003 (India)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Wg-BF-UIa">
-                            <rect key="frame" x="15" y="20" width="334" height="41"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Wg-BF-UIa">
+                            <rect key="frame" x="15" y="20" width="334" height="20.5"/>
                             <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI  Text" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="swh-F0-zNC">
+                            <rect key="frame" x="359" y="10.5" width="40" height="40"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="edit" translatesAutoresizingMaskIntoConstraints="NO" id="Th4-4f-CPf">
+                                    <rect key="frame" x="10" y="10" width="20" height="20"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.90589970350000004" green="0.38068979980000001" blue="0.41262388230000002" alpha="0.19696302816901409" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Th4-4f-CPf" secondAttribute="trailing" constant="10" id="IfK-oU-eFN"/>
+                                <constraint firstItem="Th4-4f-CPf" firstAttribute="top" secondItem="swh-F0-zNC" secondAttribute="top" constant="10" id="L1E-lW-iWv"/>
+                                <constraint firstAttribute="height" constant="40" id="LMX-Gk-gDN"/>
+                                <constraint firstItem="Th4-4f-CPf" firstAttribute="leading" secondItem="swh-F0-zNC" secondAttribute="leading" constant="10" id="R1q-9l-8mu"/>
+                                <constraint firstAttribute="bottom" secondItem="Th4-4f-CPf" secondAttribute="bottom" constant="10" id="SGc-JR-SUe"/>
+                                <constraint firstAttribute="width" secondItem="swh-F0-zNC" secondAttribute="height" multiplier="1:1" id="cYF-yT-7Wv"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gei-Em-bQR">
+                            <rect key="frame" x="359" y="10.5" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="epr-qE-EVz"/>
+                                <constraint firstAttribute="width" secondItem="Gei-Em-bQR" secondAttribute="height" multiplier="1:1" id="hnw-vF-md2"/>
+                            </constraints>
+                            <connections>
+                                <action selector="btnEditTapped:" destination="-1" eventType="touchUpInside" id="DI4-5t-pmH"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
+                        <constraint firstItem="swh-F0-zNC" firstAttribute="trailing" secondItem="goS-Hh-amJ" secondAttribute="trailing" id="0EB-Mf-euc"/>
+                        <constraint firstItem="swh-F0-zNC" firstAttribute="centerY" secondItem="Gei-Em-bQR" secondAttribute="centerY" id="40X-ma-Scp"/>
                         <constraint firstItem="3Wg-BF-UIa" firstAttribute="top" secondItem="B17-qO-N15" secondAttribute="top" constant="20" id="5Ka-8A-zAn"/>
-                        <constraint firstItem="Gei-Em-bQR" firstAttribute="trailing" secondItem="goS-Hh-amJ" secondAttribute="trailing" id="5e4-3B-5cD"/>
                         <constraint firstItem="goS-Hh-amJ" firstAttribute="leading" secondItem="B17-qO-N15" secondAttribute="leading" constant="15" id="BO1-Xa-JI5"/>
                         <constraint firstItem="Gei-Em-bQR" firstAttribute="leading" secondItem="3Wg-BF-UIa" secondAttribute="trailing" constant="10" id="LI6-Tq-kFL"/>
+                        <constraint firstItem="goS-Hh-amJ" firstAttribute="top" secondItem="swh-F0-zNC" secondAttribute="bottom" constant="10" id="MXY-9R-f8m"/>
+                        <constraint firstItem="swh-F0-zNC" firstAttribute="centerX" secondItem="Gei-Em-bQR" secondAttribute="centerX" id="a9e-eQ-siC"/>
                         <constraint firstItem="3Wg-BF-UIa" firstAttribute="leading" secondItem="B17-qO-N15" secondAttribute="leading" constant="15" id="ocV-E2-HKz"/>
                         <constraint firstAttribute="bottom" secondItem="goS-Hh-amJ" secondAttribute="bottom" constant="15" id="qsA-ur-feX"/>
                         <constraint firstAttribute="trailing" secondItem="goS-Hh-amJ" secondAttribute="trailing" constant="15" id="r26-TD-NPM"/>
-                        <constraint firstItem="goS-Hh-amJ" firstAttribute="top" secondItem="Gei-Em-bQR" secondAttribute="bottom" constant="10" id="sa6-Wu-BB3"/>
                         <constraint firstItem="goS-Hh-amJ" firstAttribute="top" secondItem="3Wg-BF-UIa" secondAttribute="bottom" constant="20" id="xFD-ks-avO"/>
                     </constraints>
                 </view>
@@ -133,7 +157,7 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="45" id="93s-FE-6Ul"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI  Text" pointSize="17"/>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="17"/>
                             <state key="normal" title="Manually Entry">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
@@ -146,8 +170,8 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="45" id="X8w-P2-DcQ"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI  Text" pointSize="17"/>
-                            <state key="normal" title="Allow Assess">
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="17"/>
+                            <state key="normal" title="Allow Access">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <connections>
@@ -156,11 +180,11 @@
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Location Required" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I6U-EU-QVl">
                             <rect key="frame" x="15" y="15" width="384" height="24"/>
-                            <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI  Text" pointSize="20"/>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="20"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We need your location to curate neardty stories for you" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BST-Dn-UPU">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We need your location to curate nearby stories for you" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BST-Dn-UPU">
                             <rect key="frame" x="15" y="54" width="384" height="41"/>
                             <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI  Text" pointSize="17"/>
                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

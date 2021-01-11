@@ -13,6 +13,9 @@ class Colors: NSObject {
     
     static let APP_COLOR = "#E8626A"
     static let BUTTON_COLOR = "#E8626A"
+    static let WHITE_SMOKE = "#F8F8F8"
+    static let LIGHT_COLOR = "#E76169"
+    static let DARK_COLOR = "#C9313A"
     
     //    Convert the hex string in UIColor
     static func colorWithHexString(_ hexString : String) -> UIColor {

@@ -7,7 +7,7 @@
 
 import UIKit
 import MapKit
-//import MBProgressHUD
+import MBProgressHUD
 import CoreLocation
 
 class MapVC: BaseVC, CLLocationManagerDelegate, UITextFieldDelegate, MKMapViewDelegate {
@@ -25,8 +25,10 @@ class MapVC: BaseVC, CLLocationManagerDelegate, UITextFieldDelegate, MKMapViewDe
     @IBOutlet weak var btnAllowAssess: UIButton!
     @IBOutlet weak var btnManuallyEntry: UIButton!
     @IBOutlet weak var viewLocationRequired: UIView!
+    @IBOutlet weak var viewEdit: UIView!
     
     let ZOOM_VALUE = 0.03
+    var selectedLocationString = String()
     var selectedPin:MKPlacemark? = nil
     let locationManager = CLLocationManager()
     
@@ -47,7 +49,20 @@ class MapVC: BaseVC, CLLocationManagerDelegate, UITextFieldDelegate, MKMapViewDe
         self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.createGradientColorWith(Colors.colorWithHexString(Colors.LIGHT_COLOR), Colors.colorWithHexString(Colors.DARK_COLOR), self.btnAllowAssess)
+        self.createGradientColorWith(Colors.colorWithHexString(Colors.LIGHT_COLOR), Colors.colorWithHexString(Colors.DARK_COLOR), self.btnManuallyEntry)
+        self.createGradientColorWith(Colors.colorWithHexString(Colors.LIGHT_COLOR), Colors.colorWithHexString(Colors.DARK_COLOR), self.btnCofirmLocation)
+        self.createGradientColorWith(Colors.colorWithHexString(Colors.LIGHT_COLOR), Colors.colorWithHexString(Colors.DARK_COLOR), self.viewSearch)
+    }
+    
     func setupViewDidLoadMethod() -> Void {
+        MBProgressHUD.showAdded(to: self.view, animated: true)
         self.textFieldPostcode.delegate = self
         self.mapView.delegate = self
         self.mapView.showsUserLocation = true
@@ -61,7 +76,10 @@ class MapVC: BaseVC, CLLocationManagerDelegate, UITextFieldDelegate, MKMapViewDe
         self.btnAllowAssess.layer.cornerRadius = 5.0
         self.btnManuallyEntry.layer.cornerRadius = 5.0
         self.btnCofirmLocation.layer.cornerRadius = 5.0
-        self.btnEdit.layer.cornerRadius = self.btnEdit.bounds.height/2
+        self.viewEdit.layer.cornerRadius = self.btnEdit.bounds.height/2
+//        self.btnEdit.backgroundColor = Colors.colorWithHexString(Colors.BUTTON_COLOR)
+//        self.btnEdit.alpha = 0.2
+//        UtilityMethods.changeButtonIconColor("edit", Colors.colorWithHexString(Colors.BUTTON_COLOR), self.btnEdit)
         self.btnCofirmLocation.backgroundColor = Colors.colorWithHexString(Colors.BUTTON_COLOR)
         self.btnManuallyEntry.backgroundColor = Colors.colorWithHexString(Colors.BUTTON_COLOR)
         self.btnAllowAssess.backgroundColor = Colors.colorWithHexString(Colors.BUTTON_COLOR)
@@ -139,15 +157,51 @@ class MapVC: BaseVC, CLLocationManagerDelegate, UITextFieldDelegate, MKMapViewDe
         self.selectedPin = MKPlacemark(coordinate: center, addressDictionary:nil)
         let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: self.ZOOM_VALUE, longitudeDelta: self.ZOOM_VALUE))
         self.mapView.setRegion(region, animated: true)
+        self.setupDefaultAddress(manager, didUpdateLocations: locations)
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("Error: " + error.localizedDescription)
+        MBProgressHUD.hide(for: self.view, animated: true)
+    }
+    
+    func setupDefaultAddress(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) -> Void {
+        let locValue:CLLocationCoordinate2D = manager.location!.coordinate
+        print("locations = \(locValue.latitude) \(locValue.longitude)")
+        let userLocation :CLLocation = locations[0] as CLLocation
+        let geocoder = CLGeocoder()
+        geocoder.reverseGeocodeLocation(userLocation) { (placemarks, error) in
+            if (error != nil){
+                print("error in reverseGeocode")
+            }
+            let placemarkArray = placemarks! as [CLPlacemark]
+            if placemarkArray.count>0{
+                let placemark = placemarks![0]
+                
+                let streetName = (placemark.subLocality != nil) ? (placemark.subLocality!) : ""
+                let city = (placemark.locality != nil) ? (placemark.locality!) : ""
+                let state = (placemark.administrativeArea != nil) ? (placemark.administrativeArea!) : ""
+                let country = (placemark.country != nil) ? (placemark.country!) : ""
+                let postcode = (placemark.postalCode != nil) ? (placemark.postalCode!) : ""
+                let flatName = (placemark.name != nil) ? (placemark.name!) : ""
+                let fullAddress = "\(flatName) \(streetName) \(city) \(state) \(country) - \(postcode)"
+                let annotation = MKPointAnnotation()
+                annotation.coordinate = locValue
+                annotation.title = fullAddress
+                self.selectedLocationString = "\(flatName), \(streetName), \(city), \(state), \(country), - \(postcode)"
+//                self.selectedPostcode = postcode
+//                self.defaultAddress = AddressModel.init(flatName: flatName, streetName: streetName, city: city, state: state, country: country, pincode: postcode, fullAddress: self.selectedAddress, latitude: "\(locValue.latitude)", longitude: "\(locValue.longitude)")
+                MBProgressHUD.hide(for: self.view, animated: true)
+                self.mapView.addAnnotation(annotation)
+                self.locationManager.stopUpdatingLocation()
+            }
+        }
     }
     
 //    MARK:- Button Action
     @IBAction func btnConfirmLocationTapped(_ sender: UIButton) {
         let loginVC = LoginVC.init(nibName: "LoginVC", bundle: nil)
+        loginVC.locationString = self.selectedLocationString
         self.navigationController?.pushViewController(loginVC, animated: true)
     }
     
@@ -164,9 +218,17 @@ class MapVC: BaseVC, CLLocationManagerDelegate, UITextFieldDelegate, MKMapViewDe
     }
     
     @IBAction func btnAllowAssessTapped(_ sender: UIButton) {
+        self.lblAddress.text = self.selectedLocationString
         self.viewLocationRequired.isHidden = true
         self.viewBottom.isHidden = false
         self.viewConfirmAddress.isHidden = false
+    }
+    
+    @IBAction func btnSearchTapped(_ sender: UIButton) {
+        self.hideSearchBar()
+        self.viewLocationRequired.isHidden = false
+        self.viewBottom.isHidden = false
+        self.viewConfirmAddress.isHidden = true
     }
 }
 

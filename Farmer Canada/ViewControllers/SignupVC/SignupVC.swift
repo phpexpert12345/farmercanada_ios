@@ -31,6 +31,11 @@ class SignupVC: BaseVC {
         self.setupViewDidLoadMethod()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.createGradientColorWith(Colors.colorWithHexString(Colors.LIGHT_COLOR), Colors.colorWithHexString(Colors.DARK_COLOR), self.btnSignup)
+    }
+    
     func setupViewDidLoadMethod() -> Void {
         self.navigationItem.title = "Signup"
         self.setupBackBarButton()

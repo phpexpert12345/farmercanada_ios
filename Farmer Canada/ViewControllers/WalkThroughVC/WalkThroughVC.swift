@@ -26,6 +26,11 @@ class WalkThroughVC: BaseVC, UICollectionViewDataSource, UICollectionViewDelegat
         self.setupViewDidLoadMethod()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.createGradientColorWith(Colors.colorWithHexString(Colors.LIGHT_COLOR), Colors.colorWithHexString(Colors.DARK_COLOR), self.btnGetStart)
+    }
+    
     func setupViewDidLoadMethod() -> Void {
         self.startTimer()
         
@@ -34,7 +39,8 @@ class WalkThroughVC: BaseVC, UICollectionViewDataSource, UICollectionViewDelegat
                                       ["logo" : "logo2", "title" : "Lorem ipsum dolor", "detail" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit", "bg" : "bg2", "count" : "2/4"],
                                       ["logo" : "logo3", "title" : "Lorem ipsum dolor", "detail" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit", "bg" : "bg3", "count" : "3/4"],
                                       ["logo" : "logo4", "title" : "Lorem ipsum dolor", "detail" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit", "bg" : "bg4", "count" : "4/4"]]
-//        self.btnGetStart.isHidden = true
+        self.pageControl.isHidden = true
+        self.btnGetStart.isHidden = true
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
         self.collectionView.register(UINib.init(nibName: "WalkThroughCVC", bundle: nil), forCellWithReuseIdentifier: self.CELL_ID)
