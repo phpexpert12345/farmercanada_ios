@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIText-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="111" id="KGk-i7-Jjw" customClass="AddAddressTVC" customModule="Farmer_Canada" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mwN-xv-88x">
+                        <rect key="frame" x="15" y="7.5" width="345" height="87"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ACm-1o-n1j">
+                                <rect key="frame" x="10" y="18.5" width="50" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="vzL-Mo-9qD">
+                                        <rect key="frame" x="10" y="10" width="30" height="30"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.78039215689999997" green="0.23921568630000001" blue="0.27450980390000002" alpha="0.13512323940000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="29A-Mh-Vr6"/>
+                                    <constraint firstAttribute="trailing" secondItem="vzL-Mo-9qD" secondAttribute="trailing" constant="10" id="36d-a6-fT5"/>
+                                    <constraint firstAttribute="bottom" secondItem="vzL-Mo-9qD" secondAttribute="bottom" constant="10" id="8Dc-ss-hTr"/>
+                                    <constraint firstItem="vzL-Mo-9qD" firstAttribute="leading" secondItem="ACm-1o-n1j" secondAttribute="leading" constant="10" id="Arc-ad-7Ql"/>
+                                    <constraint firstItem="vzL-Mo-9qD" firstAttribute="top" secondItem="ACm-1o-n1j" secondAttribute="top" constant="10" id="Tr3-57-Z61"/>
+                                    <constraint firstAttribute="height" constant="50" id="xFD-wE-uFw"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="My Home Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPC-dC-wpZ">
+                                <rect key="frame" x="70" y="10" width="265" height="16"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI  Text" pointSize="13"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="999" verticalCompressionResistancePriority="999" text="4623 William Head Rd" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iua-WN-cR7">
+                                <rect key="frame" x="70" y="31" width="265" height="20.5"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI  Text" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Victoria, BC V9C 3Y7, Canada" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3k-9b-Z6r">
+                                <rect key="frame" x="70" y="54.5" width="265" height="17.5"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI  Text" pointSize="15"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iua-WN-cR7" firstAttribute="top" secondItem="fPC-dC-wpZ" secondAttribute="bottom" constant="5" id="3LE-FC-rU7"/>
+                            <constraint firstItem="iua-WN-cR7" firstAttribute="trailing" secondItem="fPC-dC-wpZ" secondAttribute="trailing" id="4Lh-Q0-m90"/>
+                            <constraint firstItem="C3k-9b-Z6r" firstAttribute="top" secondItem="iua-WN-cR7" secondAttribute="bottom" constant="3" id="6Y2-dw-L2a"/>
+                            <constraint firstAttribute="trailing" secondItem="fPC-dC-wpZ" secondAttribute="trailing" constant="10" id="6bh-va-HBe"/>
+                            <constraint firstAttribute="bottom" secondItem="C3k-9b-Z6r" secondAttribute="bottom" constant="15" id="CST-bg-Mer"/>
+                            <constraint firstItem="iua-WN-cR7" firstAttribute="leading" secondItem="fPC-dC-wpZ" secondAttribute="leading" id="Jx3-7C-jQS"/>
+                            <constraint firstItem="C3k-9b-Z6r" firstAttribute="leading" secondItem="iua-WN-cR7" secondAttribute="leading" id="LXe-79-IoB"/>
+                            <constraint firstItem="ACm-1o-n1j" firstAttribute="leading" secondItem="mwN-xv-88x" secondAttribute="leading" constant="10" id="Ouq-K9-VFT"/>
+                            <constraint firstItem="ACm-1o-n1j" firstAttribute="centerY" secondItem="mwN-xv-88x" secondAttribute="centerY" id="eB5-MP-aXM"/>
+                            <constraint firstItem="fPC-dC-wpZ" firstAttribute="top" secondItem="mwN-xv-88x" secondAttribute="top" constant="10" id="fjA-HA-LTU"/>
+                            <constraint firstItem="fPC-dC-wpZ" firstAttribute="leading" secondItem="ACm-1o-n1j" secondAttribute="trailing" constant="10" id="jWi-8i-1Yc"/>
+                            <constraint firstItem="C3k-9b-Z6r" firstAttribute="trailing" secondItem="iua-WN-cR7" secondAttribute="trailing" id="xTG-t9-vfC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="mwN-xv-88x" secondAttribute="bottom" constant="7.5" id="9ke-t3-cOK"/>
+                    <constraint firstItem="mwN-xv-88x" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7.5" id="YPP-5c-oci"/>
+                    <constraint firstItem="mwN-xv-88x" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="j5c-I8-HfT"/>
+                    <constraint firstAttribute="trailing" secondItem="mwN-xv-88x" secondAttribute="trailing" constant="15" id="px0-H7-OUc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblAddressDetails" destination="C3k-9b-Z6r" id="Bzk-z4-Udr"/>
+                <outlet property="lblAddressMark" destination="iua-WN-cR7" id="cj4-ss-nDZ"/>
+                <outlet property="lblTitle" destination="fPC-dC-wpZ" id="Yyj-Ku-dZw"/>
+                <outlet property="viewContainer" destination="mwN-xv-88x" id="iAf-vj-3tb"/>
+                <outlet property="viewLocation" destination="ACm-1o-n1j" id="Nz6-8m-w4e"/>
+            </connections>
+            <point key="canvasLocation" x="139.85507246376812" y="114.17410714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="location" width="50" height="50"/>
+    </resources>
+</document>

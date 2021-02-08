@@ -34,6 +34,15 @@ class UtilityMethods: NSObject {
         view.layer.shadowPath = UIBezierPath(rect: view.bounds).cgPath
     }
     
+    static func addShadow(_ view : UIView, _ radius : CGFloat) -> Void {
+        view.layer.cornerRadius = radius
+        view.layer.shadowColor = UIColor.lightGray.cgColor
+        view.layer.shadowOpacity = 0.5
+        view.layer.shadowOffset = CGSize.zero
+        view.layer.shadowRadius = 2.0
+        view.layer.shadowPath = UIBezierPath(rect: view.bounds).cgPath
+    }
+    
 //    Change image color
     static func changeImageColor(_ imageView : UIImageView, _ color : UIColor) {
         imageView.image = imageView.image?.withRenderingMode(.alwaysTemplate)

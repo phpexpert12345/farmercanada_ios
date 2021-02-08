@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIText-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavigationPopupView" customModule="Farmer_Canada" customModuleProvider="target">
+            <connections>
+                <outlet property="btnRemoveView" destination="A27-Yc-MNT" id="aeo-z8-75s"/>
+                <outlet property="switchAddedFarm" destination="K9h-im-lrM" id="gDR-oT-jSC"/>
+                <outlet property="switchNewChat" destination="deJ-eZ-Jze" id="MH4-Of-1hd"/>
+                <outlet property="switchNewProduct" destination="WL4-bp-DTa" id="W7T-Ln-4dI"/>
+                <outlet property="switchStockProduct" destination="4Qy-ck-FLJ" id="KIL-lD-vwo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A27-Yc-MNT">
+                    <rect key="frame" x="177" y="44" width="60" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Taw-Lf-9Jt"/>
+                        <constraint firstAttribute="width" constant="60" id="yk0-jg-DK5"/>
+                    </constraints>
+                    <state key="normal" image="down_arrow"/>
+                    <connections>
+                        <action selector="btnRemovePopupTapped:" destination="-1" eventType="touchUpInside" id="1h5-B0-jOt"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notify me on the new chat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3QI-em-hOd">
+                    <rect key="frame" x="15" y="84" width="325" height="21"/>
+                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI  Text" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="deJ-eZ-Jze">
+                    <rect key="frame" x="350" y="79" width="51" height="31"/>
+                    <color key="onTintColor" red="0.78039215689999997" green="0.23921568630000001" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="switchNotifyNewChatTapped:" destination="-1" eventType="valueChanged" id="VyX-jN-lcJ"/>
+                    </connections>
+                </switch>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notify me on nearby added farm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MP4-tV-S0B">
+                    <rect key="frame" x="15" y="125" width="325" height="21"/>
+                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI  Text" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K9h-im-lrM">
+                    <rect key="frame" x="350" y="120" width="51" height="31"/>
+                    <color key="onTintColor" red="0.78039215689999997" green="0.23921568630000001" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="switchNotifyAddedFarmTapped:" destination="-1" eventType="valueChanged" id="gyH-p4-MkT"/>
+                    </connections>
+                </switch>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notify me on new product" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPV-ga-oUk">
+                    <rect key="frame" x="15" y="166" width="325" height="21"/>
+                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI  Text" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WL4-bp-DTa">
+                    <rect key="frame" x="350" y="161" width="51" height="31"/>
+                    <color key="onTintColor" red="0.78039215689999997" green="0.23921568630000001" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="switchNotifyNewProductTapped:" destination="-1" eventType="valueChanged" id="EY8-ch-z7w"/>
+                    </connections>
+                </switch>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notify the in-stock product" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MT5-PR-e4N">
+                    <rect key="frame" x="15" y="207" width="325" height="21"/>
+                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI  Text" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Qy-ck-FLJ">
+                    <rect key="frame" x="350" y="202" width="51" height="31"/>
+                    <color key="onTintColor" red="0.78039215689999997" green="0.23921568630000001" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="switchNotifyStockProductTapped:" destination="-1" eventType="valueChanged" id="IjJ-Rj-ad0"/>
+                    </connections>
+                </switch>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="deJ-eZ-Jze" firstAttribute="leading" secondItem="3QI-em-hOd" secondAttribute="trailing" constant="10" id="1lU-f4-oTq"/>
+                <constraint firstItem="A27-Yc-MNT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="3UO-po-Gfk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="deJ-eZ-Jze" secondAttribute="trailing" constant="15" id="4n3-wN-rqc"/>
+                <constraint firstItem="MP4-tV-S0B" firstAttribute="leading" secondItem="3QI-em-hOd" secondAttribute="leading" id="6S2-Fv-vW2"/>
+                <constraint firstItem="4Qy-ck-FLJ" firstAttribute="trailing" secondItem="K9h-im-lrM" secondAttribute="trailing" id="7vq-gb-4M0"/>
+                <constraint firstItem="A27-Yc-MNT" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="7xC-bD-mY2"/>
+                <constraint firstItem="deJ-eZ-Jze" firstAttribute="trailing" secondItem="K9h-im-lrM" secondAttribute="trailing" id="D68-BC-nkp"/>
+                <constraint firstItem="WL4-bp-DTa" firstAttribute="centerY" secondItem="UPV-ga-oUk" secondAttribute="centerY" id="HYr-Jf-eUK"/>
+                <constraint firstItem="WL4-bp-DTa" firstAttribute="top" secondItem="K9h-im-lrM" secondAttribute="bottom" constant="10" id="L56-iH-Phd"/>
+                <constraint firstItem="4Qy-ck-FLJ" firstAttribute="leading" secondItem="MT5-PR-e4N" secondAttribute="trailing" constant="10" id="Su4-gL-Jnn"/>
+                <constraint firstItem="K9h-im-lrM" firstAttribute="leading" secondItem="MP4-tV-S0B" secondAttribute="trailing" constant="10" id="U8e-Xz-3cc"/>
+                <constraint firstItem="4Qy-ck-FLJ" firstAttribute="centerY" secondItem="MT5-PR-e4N" secondAttribute="centerY" id="XtP-am-IzN"/>
+                <constraint firstItem="UPV-ga-oUk" firstAttribute="leading" secondItem="3QI-em-hOd" secondAttribute="leading" id="Ywm-Pd-ax4"/>
+                <constraint firstItem="WL4-bp-DTa" firstAttribute="leading" secondItem="UPV-ga-oUk" secondAttribute="trailing" constant="10" id="dXA-nt-Qdp"/>
+                <constraint firstItem="K9h-im-lrM" firstAttribute="top" secondItem="deJ-eZ-Jze" secondAttribute="bottom" constant="10" id="gJl-5h-694"/>
+                <constraint firstItem="deJ-eZ-Jze" firstAttribute="centerY" secondItem="3QI-em-hOd" secondAttribute="centerY" id="h4x-gf-h41"/>
+                <constraint firstItem="4Qy-ck-FLJ" firstAttribute="top" secondItem="WL4-bp-DTa" secondAttribute="bottom" constant="10" id="krh-E8-Pgg"/>
+                <constraint firstItem="3QI-em-hOd" firstAttribute="top" secondItem="A27-Yc-MNT" secondAttribute="bottom" constant="10" id="lri-sU-rH6"/>
+                <constraint firstItem="WL4-bp-DTa" firstAttribute="trailing" secondItem="K9h-im-lrM" secondAttribute="trailing" id="ohD-Y4-613"/>
+                <constraint firstItem="MT5-PR-e4N" firstAttribute="leading" secondItem="3QI-em-hOd" secondAttribute="leading" id="q3o-T2-Nqz"/>
+                <constraint firstItem="K9h-im-lrM" firstAttribute="centerY" secondItem="MP4-tV-S0B" secondAttribute="centerY" id="sUC-QM-pJF"/>
+                <constraint firstItem="3QI-em-hOd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="zEi-P0-Upv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-196" y="92"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="down_arrow" width="30" height="30"/>
+    </resources>
+</document>

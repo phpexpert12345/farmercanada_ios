@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIText-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+        <array key="sf-ui-display-bold.otf">
+            <string>SFUIDisplay-Bold</string>
+        </array>
+        <array key="sf-ui-display-semibold.otf">
+            <string>SFUIDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="91" id="qCm-Nm-af3" customClass="OrderStatusTVC" customModule="Farmer_Canada" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qCm-Nm-af3" id="NGg-iH-kjF">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8jK-9z-8Sg">
+                        <rect key="frame" x="15" y="7.5" width="345" height="75"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cart1" translatesAutoresizingMaskIntoConstraints="NO" id="wNS-EV-VmO">
+                                <rect key="frame" x="10" y="12.5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="VZI-vK-4gS"/>
+                                    <constraint firstAttribute="width" secondItem="wNS-EV-VmO" secondAttribute="height" multiplier="1:1" id="nFz-tL-9z4"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Kin's Farm Market" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAP-mD-ozs">
+                                <rect key="frame" x="70" y="10" width="127" height="18"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI  Text" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="999" verticalHuggingPriority="251" horizontalCompressionResistancePriority="999" text="#CC99CN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UCo-rP-E91">
+                                <rect key="frame" x="125.5" y="33" width="209.5" height="13.5"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="11"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Order ID :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePu-hA-XOz">
+                                <rect key="frame" x="70" y="33" width="50.5" height="13.5"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI  Text" pointSize="11"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="999" verticalHuggingPriority="251" horizontalCompressionResistancePriority="999" text="Accepted" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUq-QO-Gi7">
+                                <rect key="frame" x="108.5" y="51.5" width="48.5" height="13.5"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="11"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6K-k8-ONF">
+                                <rect key="frame" x="70" y="51.5" width="33.5" height="13.5"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI  Text" pointSize="11"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="997" verticalHuggingPriority="251" horizontalCompressionResistancePriority="997" text="$155.80" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPm-qn-rSe">
+                                <rect key="frame" x="162" y="49.5" width="173" height="18"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Bold" family="SF UI Display" pointSize="15"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:30PM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Awc-60-0Gv">
+                                <rect key="frame" x="202" y="12.5" width="133" height="13.5"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI  Text" pointSize="11"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UCo-rP-E91" firstAttribute="centerY" secondItem="ePu-hA-XOz" secondAttribute="centerY" id="3UK-S9-haf"/>
+                            <constraint firstItem="wNS-EV-VmO" firstAttribute="centerY" secondItem="8jK-9z-8Sg" secondAttribute="centerY" id="4WI-7m-Lup"/>
+                            <constraint firstItem="T6K-k8-ONF" firstAttribute="leading" secondItem="KAP-mD-ozs" secondAttribute="leading" id="58f-q9-JGb"/>
+                            <constraint firstAttribute="bottom" secondItem="vUq-QO-Gi7" secondAttribute="bottom" constant="10" id="Eef-fZ-f57"/>
+                            <constraint firstAttribute="trailing" secondItem="HPm-qn-rSe" secondAttribute="trailing" constant="10" id="FRd-3c-G9n"/>
+                            <constraint firstAttribute="trailing" secondItem="Awc-60-0Gv" secondAttribute="trailing" constant="10" id="OSG-4b-Rt8"/>
+                            <constraint firstAttribute="trailing" secondItem="UCo-rP-E91" secondAttribute="trailing" constant="10" id="Ov8-rG-buL"/>
+                            <constraint firstItem="HPm-qn-rSe" firstAttribute="leading" secondItem="vUq-QO-Gi7" secondAttribute="trailing" constant="5" id="Spw-NM-DWq"/>
+                            <constraint firstItem="ePu-hA-XOz" firstAttribute="top" secondItem="KAP-mD-ozs" secondAttribute="bottom" constant="5" id="Ude-Ke-uN8"/>
+                            <constraint firstItem="UCo-rP-E91" firstAttribute="leading" secondItem="ePu-hA-XOz" secondAttribute="trailing" constant="5" id="XLz-3G-YbT"/>
+                            <constraint firstItem="vUq-QO-Gi7" firstAttribute="centerY" secondItem="T6K-k8-ONF" secondAttribute="centerY" id="anq-Ka-zzI"/>
+                            <constraint firstItem="KAP-mD-ozs" firstAttribute="leading" secondItem="wNS-EV-VmO" secondAttribute="trailing" constant="10" id="dCq-jG-qD8"/>
+                            <constraint firstItem="Awc-60-0Gv" firstAttribute="leading" secondItem="KAP-mD-ozs" secondAttribute="trailing" constant="5" id="f4M-T6-x1g"/>
+                            <constraint firstItem="ePu-hA-XOz" firstAttribute="leading" secondItem="KAP-mD-ozs" secondAttribute="leading" id="gtK-Of-hGj"/>
+                            <constraint firstItem="Awc-60-0Gv" firstAttribute="centerY" secondItem="KAP-mD-ozs" secondAttribute="centerY" id="jgE-jZ-OVr"/>
+                            <constraint firstItem="T6K-k8-ONF" firstAttribute="top" secondItem="ePu-hA-XOz" secondAttribute="bottom" constant="5" id="jgf-YK-fa0"/>
+                            <constraint firstItem="KAP-mD-ozs" firstAttribute="top" secondItem="8jK-9z-8Sg" secondAttribute="top" constant="10" id="m4L-4E-Z9G"/>
+                            <constraint firstItem="vUq-QO-Gi7" firstAttribute="leading" secondItem="T6K-k8-ONF" secondAttribute="trailing" constant="5" id="n9A-T5-8cX"/>
+                            <constraint firstItem="HPm-qn-rSe" firstAttribute="centerY" secondItem="vUq-QO-Gi7" secondAttribute="centerY" id="sY1-iQ-8qZ"/>
+                            <constraint firstItem="wNS-EV-VmO" firstAttribute="leading" secondItem="8jK-9z-8Sg" secondAttribute="leading" constant="10" id="vvX-Jf-FZB"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="8jK-9z-8Sg" secondAttribute="trailing" constant="15" id="2un-H3-UYg"/>
+                    <constraint firstItem="8jK-9z-8Sg" firstAttribute="leading" secondItem="NGg-iH-kjF" secondAttribute="leading" constant="15" id="9h3-nN-FWO"/>
+                    <constraint firstAttribute="bottom" secondItem="8jK-9z-8Sg" secondAttribute="bottom" constant="7.5" id="dpG-7R-HXZ"/>
+                    <constraint firstItem="8jK-9z-8Sg" firstAttribute="top" secondItem="NGg-iH-kjF" secondAttribute="top" constant="7.5" id="iEc-r9-nLx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="wIk-gU-e8N"/>
+            <connections>
+                <outlet property="lblStatus" destination="vUq-QO-Gi7" id="SZ1-ES-70F"/>
+                <outlet property="viewContainer" destination="8jK-9z-8Sg" id="teL-nj-mD7"/>
+            </connections>
+            <point key="canvasLocation" x="141.30434782608697" y="107.14285714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cart1" width="244" height="244"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

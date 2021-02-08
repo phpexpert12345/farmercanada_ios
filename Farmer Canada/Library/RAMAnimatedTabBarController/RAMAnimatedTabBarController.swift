@@ -260,6 +260,15 @@ open class RAMAnimatedTabBarController: UITabBarController {
     var arrViews:[UIView] = []
     
     // MARK: life circle
+    open override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
+    open override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+    }
 
     open override func viewDidLoad() {
         super.viewDidLoad()

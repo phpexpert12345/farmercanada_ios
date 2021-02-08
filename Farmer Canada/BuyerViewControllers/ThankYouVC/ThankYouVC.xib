@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThankYouVC" customModule="Farmer_Canada" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thank_you_bg" translatesAutoresizingMaskIntoConstraints="NO" id="fra-5q-Sv2">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgz-Ts-es8">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OJT-QD-8Gr">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="OJT-QD-8Gr" secondAttribute="trailing" id="3hr-B0-AXK"/>
+                        <constraint firstAttribute="bottom" secondItem="OJT-QD-8Gr" secondAttribute="bottom" id="A5t-RB-oax"/>
+                        <constraint firstItem="OJT-QD-8Gr" firstAttribute="top" secondItem="cgz-Ts-es8" secondAttribute="top" id="Is2-Z7-6jT"/>
+                        <constraint firstItem="OJT-QD-8Gr" firstAttribute="leading" secondItem="cgz-Ts-es8" secondAttribute="leading" id="ve5-Gs-Nxy"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="OJT-QD-8Gr" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="6du-dz-F8F"/>
+                <constraint firstItem="cgz-Ts-es8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ASC-XS-5CH"/>
+                <constraint firstItem="OJT-QD-8Gr" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.912946" id="Bcf-TL-8Vj"/>
+                <constraint firstItem="fra-5q-Sv2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="M45-IO-wCy"/>
+                <constraint firstItem="fra-5q-Sv2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="U6R-hk-F2z"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="fra-5q-Sv2" secondAttribute="bottom" id="k8K-Vr-gKV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cgz-Ts-es8" secondAttribute="trailing" id="rWr-TZ-Jat"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="cgz-Ts-es8" secondAttribute="bottom" id="s5D-aG-Tut"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fra-5q-Sv2" secondAttribute="trailing" id="t65-N4-xOk"/>
+                <constraint firstItem="cgz-Ts-es8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="xkb-Ur-5LT"/>
+            </constraints>
+            <point key="canvasLocation" x="44.927536231884062" y="91.741071428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="thank_you_bg" width="320" height="693"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

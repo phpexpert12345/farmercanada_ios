@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="sf-ui-display-semibold.otf">
+            <string>SFUIDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddressVC" customModule="Farmer_Canada" customModuleProvider="target">
+            <connections>
+                <outlet property="btnAddAddress" destination="A8U-fg-pcf" id="5Sk-pd-hil"/>
+                <outlet property="tableView" destination="bzQ-Dn-nKK" id="a3f-hF-rwd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8U-fg-pcf">
+                    <rect key="frame" x="246" y="59" width="153" height="33"/>
+                    <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="17"/>
+                    <state key="normal" title="Add New Address +"/>
+                    <connections>
+                        <action selector="btnAddAddressTapped:" destination="-1" eventType="touchUpInside" id="WAi-xP-bZu"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bzQ-Dn-nKK">
+                    <rect key="frame" x="0.0" y="102" width="414" height="760"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="A8U-fg-pcf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="4wV-I6-1L4"/>
+                <constraint firstItem="bzQ-Dn-nKK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="BEB-hk-BfG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bzQ-Dn-nKK" secondAttribute="trailing" id="Omg-ZJ-oJE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bzQ-Dn-nKK" secondAttribute="bottom" id="SRl-iC-Mqw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="A8U-fg-pcf" secondAttribute="trailing" constant="15" id="XVA-ck-IfN"/>
+                <constraint firstItem="bzQ-Dn-nKK" firstAttribute="top" secondItem="A8U-fg-pcf" secondAttribute="bottom" constant="10" id="mIR-F9-7Yx"/>
+            </constraints>
+            <point key="canvasLocation" x="116" y="92"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

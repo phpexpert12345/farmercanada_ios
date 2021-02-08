@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIText-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SupportVC" customModule="Farmer_Canada" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="8Qs-6A-ORx" id="J9e-bC-BLX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewContainer" destination="cS8-da-sEy" id="01k-Ix-voG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cS8-da-sEy">
+                    <rect key="frame" x="15" y="59" width="384" height="78"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get quick customer support by selecting your item" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ltx-Xa-Xuf">
+                            <rect key="frame" x="15" y="15" width="354" height="48"/>
+                            <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI  Text" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.25882352939999997" green="0.57706534860000003" blue="0.2008140981" alpha="0.14000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Ltx-Xa-Xuf" firstAttribute="top" secondItem="cS8-da-sEy" secondAttribute="top" constant="15" id="5gu-gp-anH"/>
+                        <constraint firstAttribute="trailing" secondItem="Ltx-Xa-Xuf" secondAttribute="trailing" constant="15" id="XZ2-1k-Zt8"/>
+                        <constraint firstAttribute="bottom" secondItem="Ltx-Xa-Xuf" secondAttribute="bottom" constant="15" id="gZd-Dw-ote"/>
+                        <constraint firstItem="Ltx-Xa-Xuf" firstAttribute="leading" secondItem="cS8-da-sEy" secondAttribute="leading" constant="15" id="lFC-WA-5Gn"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Qs-6A-ORx">
+                    <rect key="frame" x="0.0" y="142" width="414" height="720"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8Qs-6A-ORx" secondAttribute="trailing" id="29r-1y-kv1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="8Qs-6A-ORx" secondAttribute="bottom" id="eNm-sX-CwY"/>
+                <constraint firstItem="cS8-da-sEy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="k7I-4r-7p3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cS8-da-sEy" secondAttribute="trailing" constant="15" id="oCV-u4-4jl"/>
+                <constraint firstItem="8Qs-6A-ORx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="q7h-aG-uhi"/>
+                <constraint firstItem="8Qs-6A-ORx" firstAttribute="top" secondItem="cS8-da-sEy" secondAttribute="bottom" constant="5" id="unc-dl-qxA"/>
+                <constraint firstItem="cS8-da-sEy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="vpG-rb-2uL"/>
+            </constraints>
+            <point key="canvasLocation" x="-88" y="92"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
